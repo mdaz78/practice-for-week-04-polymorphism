@@ -1,4 +1,4 @@
-const Person = require('./person');
+const Person = require("./person");
 
 class Student extends Person {
   constructor(firstName, lastName, major, GPA) {
@@ -15,6 +15,10 @@ class Student extends Person {
     } else {
       return "Both students have the same GPA";
     }
+  }
+
+  introduce() {
+    return `Hello. I am ${this.firstName} ${this.lastName}, and I study ${this.major}.`;
   }
 }
 
